@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{array}}" wx:key="index">
+    {{index}}: {{item.message}}
+  </view>
+  <view wx:for="{{doubanarray}}" wx:key="index" class="doubanList">
+
+<view class="content">    <view >top-{{index}}: {{item.title}}/{{item.original_title}} - {{item.year}} </view>
+    <view>导演:{{item.avatars}} /主演:{{item.casts}}/{{item.genres}}</view></view>
+
+    <view><image style="width:100px;height:100px;"  src="{{item.img}}"></image>  </view>
+  </view>
+  <button type="primary"  bindtap="http">彩票</button>
+  <button type="primary"  bindtap="http1">电影</button>
+</view>

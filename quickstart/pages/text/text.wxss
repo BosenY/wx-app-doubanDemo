@@ -1,0 +1,10 @@
+.content view{
+  font-size: 13px;
+}
+.container{
+  display: block;
+}
+.doubanList{
+  display: flex;
+  border-top: 1px solid #000;
+}
